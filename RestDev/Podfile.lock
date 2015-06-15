@@ -1,0 +1,61 @@
+PODS:
+  - AFNetworking (1.3.4)
+  - CDZPinger (1.0.1)
+  - CocoaLumberjack (2.0.0):
+    - CocoaLumberjack/Default (= 2.0.0)
+    - CocoaLumberjack/Extensions (= 2.0.0)
+  - CocoaLumberjack/Core (2.0.0)
+  - CocoaLumberjack/Default (2.0.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.0):
+    - CocoaLumberjack/Default
+  - ISO8601DateFormatterValueTransformer (0.6.0):
+    - RKValueTransformers (~> 1.1.0)
+  - M13ProgressSuite (1.2.7)
+  - MagicalRecord (2.3.0)
+  - OHHTTPStubs (4.0.2)
+  - RestKit (0.24.1):
+    - RestKit/Core (= 0.24.1)
+  - RestKit/Core (0.24.1):
+    - RestKit/CoreData
+    - RestKit/Network
+    - RestKit/ObjectMapping
+  - RestKit/CoreData (0.24.1):
+    - RestKit/ObjectMapping
+  - RestKit/Network (0.24.1):
+    - AFNetworking (~> 1.3.0)
+    - RestKit/ObjectMapping
+    - RestKit/Support
+    - SOCKit
+  - RestKit/ObjectMapping (0.24.1):
+    - ISO8601DateFormatterValueTransformer (~> 0.6.0)
+    - RestKit/Support
+    - RKValueTransformers (~> 1.1.0)
+  - RestKit/Support (0.24.1):
+    - TransitionKit (~> 2.1.0)
+  - RKValueTransformers (1.1.2)
+  - SOCKit (1.1)
+  - TransitionKit (2.1.1)
+
+DEPENDENCIES:
+  - CDZPinger
+  - CocoaLumberjack
+  - M13ProgressSuite
+  - MagicalRecord
+  - OHHTTPStubs
+  - RestKit
+
+SPEC CHECKSUMS:
+  AFNetworking: cf8e418e16f0c9c7e5c3150d019a3c679d015018
+  CDZPinger: 4f49044dc7b189755e10ad9f7d5d9576714422dd
+  CocoaLumberjack: a6f77d987d65dc7ba86b0f84db7d0b9084f77bcb
+  ISO8601DateFormatterValueTransformer: 3ac3a721381697cab4e792d8049ce2f2e9ad3036
+  M13ProgressSuite: 03d194af6359da440641ba758aed5a18b0386a86
+  MagicalRecord: 89eb7d7ead39fb37f01c3d010665ee94d17f8dba
+  OHHTTPStubs: dbd1957d414659783e07b49c961940b7564c23d9
+  RestKit: 1987b5efef289c6b27bd980714d6ca48d3871b78
+  RKValueTransformers: 66ac5e4f077fdbe3496e792d89eeff4c3eb67701
+  SOCKit: c7376ac262bea9115b8f749358f762522a47d392
+  TransitionKit: 3a14b6acc7cf2d1dd3e454e24dbad1cfab9a1ef1
+
+COCOAPODS: 0.37.2

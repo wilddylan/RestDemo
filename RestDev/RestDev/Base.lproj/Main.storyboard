@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfU-oV-oPj">
+                                <rect key="frame" x="16" y="67" width="568" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Objetc With Rest - Without CoreData">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="LocalObjects:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8o4-o8-pTf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGY-7I-c42">
+                                <rect key="frame" x="16" y="105" width="568" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Load Net Virtual Object With HTTP Stub-CoreData">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="NetVirtualObjects:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Fnl-mS-J1E"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TP5-2u-zOq" customClass="M13ProgressConsole">
+                                <rect key="frame" x="16" y="150" width="568" height="430"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GtI-Bu-kAa" customClass="M13ProgressViewStripedBar">
+                                <rect key="frame" x="160" y="28" width="280" height="15"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="3Pa-4Z-vWv"/>
+                                    <constraint firstAttribute="width" constant="280" id="W2c-jq-hIS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TP5-2u-zOq" firstAttribute="top" secondItem="CGY-7I-c42" secondAttribute="bottom" constant="15" id="Aes-3o-C4r"/>
+                            <constraint firstItem="GtI-Bu-kAa" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="Mc0-Ks-a36"/>
+                            <constraint firstAttribute="trailing" secondItem="CGY-7I-c42" secondAttribute="trailing" constant="16" id="O8a-Lb-MPg"/>
+                            <constraint firstItem="TP5-2u-zOq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="PKV-sn-dDI"/>
+                            <constraint firstItem="NfU-oV-oPj" firstAttribute="top" secondItem="GtI-Bu-kAa" secondAttribute="bottom" constant="24" id="UTs-m8-OHe"/>
+                            <constraint firstItem="CGY-7I-c42" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="Uzg-zS-lEb"/>
+                            <constraint firstAttribute="trailing" secondItem="TP5-2u-zOq" secondAttribute="trailing" constant="16" id="YlE-uw-gdF"/>
+                            <constraint firstItem="NfU-oV-oPj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="ZpX-ey-E48"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="TP5-2u-zOq" secondAttribute="bottom" constant="20" id="c20-Rh-pNJ"/>
+                            <constraint firstAttribute="trailing" secondItem="NfU-oV-oPj" secondAttribute="trailing" constant="16" id="eoB-so-kdL"/>
+                            <constraint firstItem="TP5-2u-zOq" firstAttribute="centerX" secondItem="GtI-Bu-kAa" secondAttribute="centerX" id="zRN-7Z-ToR"/>
+                            <constraint firstItem="CGY-7I-c42" firstAttribute="top" secondItem="NfU-oV-oPj" secondAttribute="bottom" constant="8" id="zWT-ff-NJT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ConsoleWindow" destination="TP5-2u-zOq" id="Qw1-hf-EbD"/>
+                        <outlet property="ProgressBar" destination="GtI-Bu-kAa" id="JxM-HJ-j0B"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="200" y="380"/>
+        </scene>
+    </scenes>
+</document>

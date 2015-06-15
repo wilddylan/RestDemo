@@ -1,0 +1,18 @@
+//
+//  RestDev.pch
+//  RestDev
+//
+//  Created by XueYulun on 15/6/15.
+//  Copyright (c) 2015年 __Dylan. All rights reserved.
+//
+
+#ifndef RestDev_RestDev_pch
+#define RestDev_RestDev_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+
+#import "Definese.h"
+
+#endif

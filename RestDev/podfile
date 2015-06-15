@@ -1,0 +1,7 @@
+pod 'RestKit'
+pod 'OHHTTPStubs'
+pod 'CocoaLumberjack'
+pod 'M13ProgressSuite'
+pod 'CDZPinger'
+pod 'MagicalRecord'
+
