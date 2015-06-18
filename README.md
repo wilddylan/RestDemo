@@ -1,4 +1,6 @@
 # RestDemo
+
+[![Join the chat at https://gitter.im/WildDylan/RestDemo](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/WildDylan/RestDemo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 RestDemo And OHHTTPStubs Demo And a Normal progress View
 好久没有更新文章了, 抱歉拖更、今天带大家熟悉一些新的东西。
 
